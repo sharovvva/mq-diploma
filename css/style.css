@@ -1,4 +1,367 @@
-.heading {
-    color: red;
-    border: 1px solid red;
+@font-face {
+    font-family: "Open Sans";
+    src: url("/Users/margaritasharova/Desktop/mq-diploma/fonts/OpenSans-Regular.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("/Users/margaritasharova/Desktop/mq-diploma/fonts/OpenSans-Bold.woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+}
+
+.header {
+    background-image: url('/Users/margaritasharova/Desktop/mq-diploma/images/football_767.jpg');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover; 
+    position: relative;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.header::before {
+    content: "";
+    opacity: 0.7;
+    background-color: #090c35;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.surface-logo {
+    display: block;
+    margin: 0 auto;
+    width: 132px;
+    height: 32px;
+    padding-top: 40px;
+    fill: white;
+    margin-bottom: 95px;
+}
+.header-h {
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+.header-h1 {
+    text-align: left;
+    padding-left: 6%;
+}
+.header-h2 {
+    text-align: right;
+    padding-right: 6%;
+}
+.button-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: calc(100vh - 450px);
+    margin-bottom: 50px;;
+}
+.btn-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5em;
+    color: #ffffff;
+    width: 280px;
+    height: 35px;
+    border-radius: 17px;
+    background-color: #5e42b0;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    padding: 7px 0;
+    border: 0;
+}
+.btn-app:nth-child(2) {
+    margin-top: 13px;
+}
+.caption-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 82px;
+}
+.btn-caption-normal {
+    font-weight: 400;
+}
+.btn-caption-bold {
+    font-weight: 700;
+}
+.btn-svg {
+   width: 20px;
+   height: 20px; 
+   fill: white;
+   margin-right: 6px;
+}
+.btn-svg:nth-child(2) {
+    margin-right: 11px;
+}
+
+.common-h {
+    font-size: 50px;
+    color: #e7e7e7;
+    font-weight: 700;
+    text-transform: uppercase; 
+    font-family: "Open Sans";
+    padding-left: 6%;
+    padding-top: 7%;
+    margin: 0;
+}
+.footballer-img {
+    display: block;
+    margin: auto;
+    margin-bottom: -55px;
+}
+/*.athlets-cards {
+}*/
+.card-common {
+    padding-top: 60px;
+    padding-bottom: 55px;
+    padding-left: 6%;
+}
+.athlets-card:nth-child(1) {
+    background-color: #fafafa;
+}
+.athlets-card:nth-child(2) {
+    background-color: #f5f4f9;
+    margin-top: 0;
+}
+.athlets-card:nth-child(3) {
+    background-color: #5e42b0;
+}
+.title-common {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.number-common {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Open Sans";
+    margin-right: 10px;
+}
+.number-common:nth-child(-n+2)::after {
+    content: "";
+    width: 15px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: #5e42b0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+}
+.number-common:nth-child(3)::after {  /*doesnt work this and previous one*/
+    content: "";
+    background-color: #ffffff;
+    width: 16px;
+    height: 4px;
+    border-radius: 1px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+}
+.heading-common {
+    font-size: 23px;
+    letter-spacing: 1px;
+    color: #c1c1c1;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+}
+.prg-common {
+    height: 108px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: "Open Sans";
+    margin: 0;
+    color: #000000;
+}
+.prg-white {
+    color: white;
+}
+
+.player-img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: -25px;
+}
+
+.players-card:nth-child(1) {
+    background-color: #fafafa;
+}
+.players-card:nth-child(2) {
+    background-color: #f5f4f9;
+}
+.players-card:nth-child(3) {
+    background-color: #090c35;
+}
+.players-card-number {
+    color: #8765dd;
+    margin-right: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-family: "Open Sans";
+}
+/* nth-child(3) doesnt work*/
+.players-card-number::after { 
+    content: "";
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    width: 16px;
+    height: 4px;
+    border-radius: 1px;
+}
+/*.be-active-section {
+    background-image: url("/Users/margaritasharova/Desktop/mq-diploma/images/be-active_640.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover; 
+}*/
+
+.be-active-img {
+   width: 100%; 
+   position: relative;
+   z-index: -1;
+}
+.be-active-box {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background-color: #5e42b0;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+    margin-left: 6%;
+}
+.be-active-num {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #f5f6f7;
+    font-family: "Open Sans";
+    font-weight: 700;
+}
+.be-active-num::after  {
+    content: "";
+    width: 17px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: #8765dd;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+}
+.be-active-prg {
+    width: 280px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #000000;
+    font-family: "Open Sans";
+    font-weight: 400;
+    padding-left: 6%;
+    margin-bottom: 80px;
+}
+.footer {
+    background-image: url('/Users/margaritasharova/Desktop/mq-diploma/images/game_767.jpg');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover; 
+    position: relative;
+    color: #ffffff;
+    z-index: 1;
+    margin: 0;
+}
+
+.footer::before {
+    content: "";
+    opacity: 0.7;
+    background-color: #090c35;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.footer-btn {
+    width: 72px;
+    height: 72px;
+    background-color: #5e42b0;
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 95px;
+    border: 0;
+    margin-top: 95px;
+}
+.footer-logo {
+    width: 57px;
+    height: 46px;
+    fill: white;
+}
+.footer-h2 {
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+}
+.footer-h3 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #9b8ec1;
+    font-weight: 400;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+}
+.surface-footer {
+    margin-bottom: 0;
+    display: block;
+    margin: 0 auto;
+    width: 132px;
+    height: 32px;
+    padding-top: 40px;
+    fill: white;
 }
