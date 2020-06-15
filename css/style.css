@@ -14,10 +14,11 @@
 
 body {
     margin: 0;
+    
 }
 
 .header {
-    background-image: url('images/football_767.jpg');
+    background-image: url('/Users/margaritasharova/Desktop/mq-diploma/images/football_767.jpg');
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -73,7 +74,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: calc(100vh - 450px);
-    margin-bottom: 50px;;
+    margin-bottom: 50px;
 }
 .btn-app {
     display: flex;
@@ -114,7 +115,12 @@ body {
 .btn-svg:nth-child(2) {
     margin-right: 11px;
 }
-
+.athlets-img {
+    background-image: url("/Users/margaritasharova/Desktop/mq-diploma/images/footballer_192.png");
+    background-repeat: no-repeat;
+    background-size: 270px;
+  
+}
 .common-h {
     font-size: 50px;
     color: #e7e7e7;
@@ -139,6 +145,7 @@ body {
 }
 .athlets-card:nth-child(1) {
     background-color: #fafafa;
+    margin-top: 246px;
 }
 .athlets-card:nth-child(2) {
     background-color: #f5f4f9;
@@ -192,7 +199,6 @@ body {
     font-family: "Open Sans";
 }
 .prg-common {
-    height: 108px;
     font-size: 15px;
     letter-spacing: 1px;
     line-height: 18px;
@@ -283,7 +289,6 @@ body {
     margin-top: 1px;
 }
 .be-active-prg {
-    width: 280px;
     font-size: 16px;
     letter-spacing: 1px;
     color: #000000;
@@ -293,7 +298,7 @@ body {
     margin-bottom: 80px;
 }
 .footer {
-    background-image: url('images/game_767.jpg');
+    background-image: url('/Users/margaritasharova/Desktop/mq-diploma/images/game_767.jpg');
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -317,7 +322,7 @@ body {
     left: 0;
     z-index: -1;
 }
-.footer-container {
+.logo-container {
     padding-top: 95px;
 }
 .footer-box {
@@ -364,4 +369,254 @@ body {
     height: 32px;
     padding-top: 10px;
     fill: white;
+}
+@media (min-width: 641px) and (max-width: 960px) {
+    .header {
+        background-image: url("/Users/margaritasharova/Desktop/mq-diploma/images/football_1280.jpg");
+    }
+    .surface-logo {
+        margin-bottom: 179px;
+    }
+    .section-athlets {
+        position: relative;
+    }
+    .h-athlets {
+        padding-left: 300px;
+    }
+    .footballer-img {
+        margin-left: -140px;
+        position: absolute;
+        margin-top: -80px;
+    }
+    .card-common {
+        padding-top: 0;
+        padding-left: 0;
+    }
+    .athlets-title {
+        padding-left: 300px;
+    }
+    .number-common {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .number-common::after { /*doesnt workkk*/
+        content: "";
+        width: 19px;
+        height: 5px;
+        border-radius: 2px;
+    }
+    .heading-common {
+        font-size: 32px;
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+    .athlets-card-prg {
+        padding-left: 300px;
+    }
+    .prg-common {
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-weight: 400;
+        max-width: 398px;
+    }
+    .players-section {
+        position: relative;
+    }
+    .h-players {
+        padding-left: 6%;
+    }
+    .player-img {
+        position: absolute;
+        right: 0;
+    }
+    .be-active-box {
+        width: 116px;
+        height: 116px;
+    }
+    .be-active-num {
+        font-size: 24px;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+    .be-active-num::after {
+        width: 25px;
+        height: 5px;
+        border-radius: 2px; 
+    }
+    .be-active-prg {
+        letter-spacing: 1px;
+        line-height: 28px;
+        margin-right: 92px;
+    }
+    .footer {
+        background-image: url("/Users/margaritasharova/Desktop/mq-diploma/images/game_1280.jpg");
+    }
+    .footer-box {
+        width: 132px;
+        height: 136px;
+    }
+    .footer-logo {
+        width: 103px;
+        height: 85px;
+    }
+    .footer-h3 {
+        font-size: 36px;
+    }
+    .btns-footer {
+        margin-top: calc(100vh - 720px);
+    }
+    .surface-footer {
+        width: 203px;
+        height: 55px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 960px), (min-width: 961px) and (max-width: 1920px) {
+    .surface-logo {
+        width: 205px;
+    }
+    .header-h {
+        font-size: 64px;
+        letter-spacing: 3px;
+    }
+    .header-h2 {
+        line-height: 50px;
+        padding-left: 45px;
+    }
+    .button-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        margin-top: calc(100vh - 700px);
+    }
+    .btn-app {
+        height: 77px;
+        border-radius: 38px;
+        flex-direction: row;
+        width: 310px;
+    }
+    .btn-app:nth-child(2) {
+        margin-left: 30px;
+    }
+    .btn-caption-normal {
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 300;
+    }
+    .btn-caption-bold {
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+    .common-h {
+        font-size: 80px;
+        font-weight: 700;
+    }
+    .athlets-card:nth-child(1) {
+        background-color: #fff;
+    }
+    .footer-h2 {
+        font-size: 80px;
+        letter-spacing: 4px;
+    }
+}
+@media (min-width: 961px) and (max-width: 1920px) {
+    .surface-logo {
+        margin-bottom: 292px;
+    }
+    .section-athlets {
+        position: relative;
+    }
+    .footballer-img {
+        width: 50%;
+        position: absolute;
+        top: 25px;
+    }
+    .athlets-card {
+        padding-left: 50%;
+    }
+    .h-athlets {
+        padding-left: 50%;
+    }
+    .number-common {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .number-common::after {
+        content: "";
+        width: 19px;
+        height: 5px;
+        border-radius: 2px;
+    }
+    .heading-common {
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+    .prg-common {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .athlets-card-prg {
+        padding-right: 194px;
+    }
+    .h-players {
+        padding-left: 194px;
+    }
+    .players-card {
+        padding-left: 194px;
+    }
+    .be-active-cards {
+        display: flex;
+    }
+    .be-active-img {
+        width: 50%;
+    }
+    .be-active-box {
+        width: 168px;
+        height: 155px;
+    }
+    .be-active-title {
+        width: 50%;
+    }
+    .be-active-num {
+        font-size: 24px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .be-active-num::after {
+        width: 24px;
+        height: 5px;
+    }
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        padding-top: 245px;
+        align-items: center;
+    }
+
+    .logo-container {
+        padding-top: 0;
+    }
+    .title-container {
+        margin-left: 36px;
+    }
+    .footer-box {
+        width: 130px;
+        height: 135px
+    }
+    .footer-logo {
+        width: 103px;
+        height: 85px;
+    }
+    .footer-h2 {
+        margin-top: 0;
+
+    }
+    .footer-h3 {
+        font-size: 30px;
+        text-align: left;
+        margin-bottom: 0;
+    }
 }
