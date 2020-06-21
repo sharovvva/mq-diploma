@@ -219,18 +219,20 @@ body {
 .prg-white {
     color: white;
 }
-.h-players::after {
+/*.h-players::after {
     content: "";
     background-image: url("../images/basketballer_302.png");
     background-repeat: no-repeat;
     background-size: contain;
     
+        for mibile versions! use media 
+
     z-index: 1;
     display: block;
     height: 285px;
     margin-bottom: -30px;
-}
-.player-img {
+}*/
+picture {
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -456,7 +458,7 @@ body {
     .h-players {
         padding-left: 6%;
     }
-    .h-players::after {
+    /*.h-players::after {
         content: "";
         background-image: url("../images/basketballer_436.png");
         background-repeat: no-repeat;
@@ -465,12 +467,9 @@ body {
         display: block;
         height: 550px;
         margin-bottom: -480px;
-    }
+    }*/
     .players-card {
         padding-left: 6%;
-    }
-    .players-card:nth-child(1) {
-        color: #fff;
     }
     .player-img {
         position: absolute;
@@ -518,7 +517,7 @@ body {
     }
 }
 
-@media (min-width: 641px) and (max-width: 960px), (min-width: 961px) and (max-width: 1920px) {
+@media (min-width: 641px) {
     .surface-logo {
         width: 205px;
     }
@@ -528,7 +527,6 @@ body {
     }
     .header-h2 {
         line-height: 50px;
-        padding-left: 45px;
     }
     .button-block {
         display: flex;
@@ -563,17 +561,70 @@ body {
     .athlets-card:nth-child(1) {
         background-color: #fff;
     }
+    .players-card:nth-child(1) {
+        background-color: #fff;
+    }
     .footer-h2 {
         font-size: 80px;
         letter-spacing: 4px;
     }
 }
 @media (min-width: 961px) and (max-width: 1920px) {
+    
+    .players-section {
+        position: relative;
+    }
+    .player-img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: auto;
+        max-height: 800px;
+    }
+    .be-active-card {
+        display: flex;
+        position: relative;
+    }
+    .be-active-card:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+    .be-active-img {
+        width: 50%;
+    }
+    .be-active-box {
+        width: 168px;
+        height: 155px;
+        position: absolute;
+        left: calc(50% - 168px / 2);
+        right: calc(50% - 155px / 2);
+       
+    }
+    .be-active-title {
+        width: 50%;
+    }
+    .be-active-num {
+        font-size: 24px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .be-active-num::after {
+        width: 24px;
+        height: 5px;
+    }
+    
+}
+@media (min-width: 1921px) {
     .header {
         background-image: url("../images/football_1920.jpg");
     }
     .surface-logo {
-        margin-bottom: 292px;
+        margin-bottom: 200px;
+    }
+    .header-h1 {
+        padding-left: 194px;
+    }
+    .header-h2 {
+        padding-left: 194px;
     }
     .section-athlets {
         position: relative;
@@ -602,12 +653,12 @@ body {
     }
 
     .number-common {
-        font-size: 18px;
+        font-size: 24px;
         letter-spacing: 1px;
     }
     .number-common::after {
         content: "";
-        width: 19px;
+        width: 24px;
         height: 5px;
         border-radius: 2px;
     }
@@ -616,48 +667,41 @@ body {
         letter-spacing: 2px;
     }
     .prg-common {
-        font-size: 20px;
+        font-size: 24px;
         line-height: 30px;
     }
+   
     .athlets-card-prg {
         padding-right: 194px;
     }
     .h-players {
         padding-left: 194px;
     }
-    .h-players::after {
-        content: "";
-        background-image: url("../images/basketballer_991.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 0 100%;
-        display: block;
-        height: 800px;
-        margin-bottom: -880px;
+    .players-section {
+        position: relative;
     }
+    .player-img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: auto;
+        max-height: 800px;
+    }
+
     .players-card {
         padding-left: 194px;
     }
-    .players-card:nth-child(1) {
+    .players-card-prg {
+        font-size: 24px;
+        line-height: 30px;
+        width: 50%;
+    }
+    /*.players-card:nth-child(1) {
         background-color: #fff;
-    }
-    .be-active-card {
-        display: flex;
-        position: relative;
-    }
-    .be-active-card:nth-child(2) {
-        flex-direction: row-reverse;
-    }
-    .be-active-img {
-    }
+    }*/
     .be-active-box {
         width: 168px;
         height: 155px;
-        position: absolute;
-        left: 50%;
-        right: 50%;
-        bottom: 50%;
-       
     }
     .be-active-title {
         width: 50%;
@@ -670,6 +714,10 @@ body {
     .be-active-num::after {
         width: 24px;
         height: 5px;
+    }
+    .be-active-prg {
+        font-size: 24px;
+        line-height: 30px;
     }
     .footer-container {
         display: flex;
