@@ -570,7 +570,23 @@ picture {
     }
 }
 @media (min-width: 961px) and (max-width: 1920px) {
-    
+    .h-athlets::after {
+    content: "";
+    background-image: url("../images/footballer_497.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: -870px;
+    margin-left: -600px;
+    display: block;
+    height: 900px;
+    background-position: 0 0;
+    }
+    .athlets-card {
+        padding-left: 50%;
+    }
+    .h-athlets {
+        padding-left: 50%;
+    }
     .players-section {
         position: relative;
     }
