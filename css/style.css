@@ -1,12 +1,35 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+
 @font-face {
     font-family: "Open Sans";
-    src: url("/Users/margaritasharova/Desktop/mq-diploma/fonts/OpenSans-Regular.woff");
+    src: url("../fonts/OpenSans-Regular.woff");
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: "Open Sans";
-    src: url("/Users/margaritasharova/Desktop/mq-diploma/fonts/OpenSans-Bold.woff");
+    src: url("../fonts/OpenSans-Bold.woff");
     font-weight: 700;
     font-style: normal;
 }
@@ -14,9 +37,12 @@
 
 body {
     margin: 0;
-    
+    min-width: 320px;
 }
-
+a {
+    list-style-type: none;
+    text-decoration: none;
+}
 .header {
     background-image: url('../images/football_767.jpg');
     width: 100%;
@@ -59,15 +85,14 @@ body {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    line-height: 30px;
+    line-height: 31px;
+    text-align: center;
 }
-.header-h1 {
-    text-align: left;
-    padding-left: 6%;
-}
+/*.header-h1 {
+    text-align: center;
+}*/
 .header-h2 {
-    text-align: right;
-    padding-right: 6%;
+    padding-left: 90px;
 }
 .button-block {
     display: flex;
@@ -99,6 +124,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     min-width: 82px;
+    font-family: "Open Sans";
 }
 .btn-caption-normal {
     font-weight: 400;
@@ -390,7 +416,6 @@ picture {
     margin: 0 auto;
     width: 132px;
     height: 32px;
-    padding-top: 10px;
     fill: white;
 }
 @media (min-width: 641px) and (max-width: 960px) {
@@ -399,6 +424,13 @@ picture {
     }
     .surface-logo {
         margin-bottom: 179px;
+    }
+    .header-h1 {
+        max-width: 800px;
+        line-height: 64px;
+    }
+    .header-h2 {
+        padding-left: 230px;
     }
     .section-athlets {
         position: relative;
@@ -523,12 +555,18 @@ picture {
 @media (min-width: 641px) {
     .surface-logo {
         width: 205px;
+        height: 55px;
     }
     .header-h {
         font-size: 64px;
         letter-spacing: 3px;
     }
+    .header-h1 {
+        max-width: 900px;
+        line-height: 64px;
+    }
     .header-h2 {
+        padding-left: 242px;
         line-height: 50px;
     }
     .button-block {
@@ -536,7 +574,7 @@ picture {
         flex-direction: row;
         justify-content: center;
         align-items: baseline;
-        margin-top: calc(100vh - 700px);
+        margin-top: calc(100vh - 650px);
     }
     .btn-app {
         height: 77px;
@@ -570,6 +608,9 @@ picture {
     .footer-h2 {
         font-size: 80px;
         letter-spacing: 4px;
+    }
+    .btns-footer {
+        margin-top: calc(100vh - 650px);
     }
 }
 @media (min-width: 961px) and (max-width: 1920px) {
@@ -646,7 +687,7 @@ picture {
 }
 @media (min-width: 961px) {
     .surface-logo {
-        margin-bottom: 300px;
+       margin-bottom: 200px;
     }
     .surface-logo,
     .surface-footer {
@@ -668,6 +709,9 @@ picture {
         position: absolute;
         width: 900px;
         left: 20px;
+    }
+    .athlets-card-prg {
+        margin-right: 55px;
     }
     .number-common {
         font-size: 24px;
